@@ -104,18 +104,18 @@ const Services = () => {
                         >
                             {/* Service Title */}
                             <div 
-                                className='flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50'
+                                className='flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 '
                                 onClick={() => toggleService(service.title)}
                             >
-                                <div className="flex items-center">
-                                    <span className="mr-2 text-blue-500">♦</span>
+                                <div className="flex  items-center max-md:flex-[10]">
+                                    <span className="mr-2 text-blue-500">🔷</span>
                                     <h2 className="text-lg font-semibold">{service.title}</h2>
                                 </div>
                                 {openSection === service.title ? (
-                            <Minus className="bg-orange-400 rounded-sm text-white  " />
+                            <Minus className="bg-orange-400 rounded-sm text-white max-md:flex-[1]" />
                             ) : 
                             (
-                            <Plus className="bg-orange-400 rounded-sm text-white " />
+                            <Plus className="bg-orange-400 rounded-sm text-white max-md:flex-[1]" />
                             )}
                             </div>
 
